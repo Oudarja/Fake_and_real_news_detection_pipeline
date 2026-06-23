@@ -24,5 +24,3 @@ fine_tuned_bert_base_multilingual_uncased/
 results/
 logs
 fine_tuned_tokenizer_bert_base_multilingual_uncased/
-
-Frontend/
