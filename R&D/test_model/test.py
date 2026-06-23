@@ -100,7 +100,7 @@ async def response(content: news):
         text,
         tokenizer,
         model_snapshot,
-        threshold=0.9
+        threshold=0.5
     )
 
     # return prediction
