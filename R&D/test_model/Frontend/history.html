@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analysis History</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome for eye icon -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<div class="page-container">
+
+    <div class="history-box">
+
+        <h2>Analysis History</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>SL</th>
+                    <th>News</th>
+                    <th>Model Verdict</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="historyTable"></tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<!-- MODAL -->
+
+<div id="newsModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close-btn" id="closeModal">
+            &times;
+        </span>
+
+        <h2>Analysis Details</h2>
+
+        <div class="modal-section">
+            <h3>News</h3>
+            <p id="modalNews"></p>
+        </div>
+
+        <div class="modal-section">
+            <h3>Prediction</h3>
+            <p id="modalVerdict"></p>
+        </div>
+
+        <div class="modal-section">
+            <h3>Confidence</h3>
+            <p id="modalConfidence"></p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="JS/navbar.js"></script>
+<script src="JS/history.js"></script>
+
+</body>
+</html>

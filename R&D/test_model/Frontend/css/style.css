@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+/* ================= LOGIN ================= */
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+
+    background: url('https://images.pexels.com/photos/176851/pexels-photo-176851.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
+
+    background-size: cover;
+    background-position: center;
+}
+
+.box {
+    width: 400px;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: rgba(0, 0, 0, .8);
+
+    padding: 40px;
+
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, .5);
+
+    border-radius: 10px;
+}
+
+.box h2 {
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.box p {
+    margin: 10px 0;
+}
+
+.box a {
+    color: #9a9d9e;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 0;
+
+    font-size: 16px;
+
+    margin-bottom: 30px;
+
+    color: #fff;
+
+    border: none;
+    border-bottom: 1px solid #fff;
+
+    outline: none;
+
+    background: transparent;
+}
+
+.input-box label {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    padding: 10px 0;
+
+    color: #fff;
+
+    pointer-events: none;
+
+    transition: .5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+
+    top: -18px;
+
+    color: #03a9f4;
+
+    font-size: 12px;
+}
+
+.box input[type=submit] {
+
+    width: 100%;
+
+    background: #03a9f4;
+
+    border: none;
+
+    color: #fff;
+
+    padding: 12px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    width: 100%;
+    height: 70px;
+    background: #111;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+/* LEFT */
+.navbar .left {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* MIDDLE LINKS */
+.navbar .middle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* NAV LINKS */
+.navbar .middle a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+
+    padding: 8px 14px;
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+/* Remove purple visited issue */
+.navbar .middle a:visited {
+    color: white;
+}
+
+/* Hover effect */
+.navbar .middle a:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: #03a9f4;
+}
+
+/* Active page highlight */
+.navbar .middle a.active {
+    background: #03a9f4;
+    color: black;
+    font-weight: bold;
+}
+
+/* RIGHT BUTTON */
+.navbar .right button {
+    background: #03a9f4;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar .right button:hover {
+    background: #0288d1;
+}
+
+/* ================= PAGE CONTAINER ================= */
+
+.page-container {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    padding: 40px;
+}
+/* ================= CENTER WRAPPER ================= */
+
+.dashboard-wrapper {
+
+    width: 100%;
+    height: calc(100vh - 70px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f4f4f4;
+}
+
+/* ================= DASHBOARD BOX ================= */
+
+.dashboard-box {
+
+    width: 70%;
+    max-width: 900px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ================= TEXTAREA ================= */
+
+.dashboard-box textarea {
+
+    width: 100%;
+
+    height: 300px;   /* BIG TEXT FIELD */
+
+    padding: 15px;
+
+    resize: none;
+
+    font-size: 16px;
+
+    margin-top: 20px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+}
+
+/* ================= BUTTON ================= */
+
+.dashboard-box button {
+
+    margin-top: 20px;
+
+    background: #03a9f4;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+/* ================= RESULT ================= */
+
+#result {
+
+    margin-top: 20px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+/* ================= HISTORY ================= */
+
+.history-box {
+
+    width: 95%;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+}
+
+table th,
+table td {
+
+    border: 1px solid #ddd;
+
+    padding: 12px;
+
+    text-align: left;
+}
+
+table th {
+
+    background: #03a9f4;
+
+    color: white;
+}
+
+.action-btn {
+
+    background: red;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 12px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+/* ================= MODAL ================= */
+
+.view-btn {
+
+    background: #03a9f4;
+
+    border: none;
+
+    color: white;
+
+    padding: 10px 12px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.modal {
+
+    display: none;
+
+    position: fixed;
+
+    z-index: 1000;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: auto;
+
+    background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+
+    background: white;
+
+    margin: 5% auto;
+
+    padding: 30px;
+
+    width: 60%;
+
+    border-radius: 10px;
+
+    position: relative;
+}
+
+.close-btn {
+
+    position: absolute;
+
+    right: 20px;
+    top: 15px;
+
+    font-size: 28px;
+
+    cursor: pointer;
+}
+
+.modal-section {
+
+    margin-top: 20px;
+}
+
+.modal-section h3 {
+
+    margin-bottom: 10px;
+
+    color: #03a9f4;
+}

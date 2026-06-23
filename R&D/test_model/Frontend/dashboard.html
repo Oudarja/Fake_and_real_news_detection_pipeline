@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div id="navbar"></div>
+
+<div class="dashboard-wrapper">
+
+    <div class="dashboard-box">
+
+        <h2>Fake / Real News Analyzer</h2>
+
+        <textarea id="newsInput"
+            placeholder="Paste news text here..."></textarea>
+
+        <button onclick="analyzeNews()">
+            Check News
+        </button>
+
+        <div id="result"></div>
+
+    </div>
+
+</div>
+
+<script src="JS/navbar.js"></script>
+<script src="JS/dashboard.js"></script>
+
+<script>
+    loadNavbar();
+    checkAuth();
+</script>
+
+</body>
+</html>
